@@ -1,0 +1,14 @@
+<p [appHighlight]="color" defaultColor="violet" ngNonBindable>
+  Start editing to see some magic happen :) {{1+1}}
+</p>
+<ng-template [appUnless]="false">
+
+  ceshi
+</ng-template>
+<p *appUnless="false">
+  I think you say
+  <ng-container *ngIf="true">
+    My name is
+  </ng-container>
+  csp
+</p>
