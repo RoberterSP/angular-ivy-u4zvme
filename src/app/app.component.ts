@@ -1,6 +1,7 @@
 import { Component, VERSION } from '@angular/core';
 import { Logger } from './app.service';
 import * as _ from 'lodash'
+import * as  _moment from 'moment'
 
 @Component({
   providers: [Logger],
@@ -13,6 +14,7 @@ export class AppComponent {
     this.service.log('this is log');
     let aa = {Id: 2}
     let bb = { name: 6}
+    const aaa = _moment()
     console.log(_.merge(aa, bb))
   }
 
